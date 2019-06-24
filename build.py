@@ -17,7 +17,7 @@ def concatenateFiles(paths):
     concatFile = []
     for path in paths:
         with open(path, 'r') as file:
-            concatFile.append(*file.readlines())
+            concatFile.extend(file.readlines())
     return concatFile
 
 def saveOutputFile(path, data, append = False):
