@@ -53,7 +53,7 @@ def build():
 
 def main():
     print('PAiP Web Developer Guide Builder v.{0}'.format(__version__))
-    time_limiter = 10
+    time_limiter = 5
     if 'cb' in argv:
         print('Starting Continuos Build Mode')
         print('-----------------------------')
