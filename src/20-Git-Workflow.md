@@ -1,45 +1,3 @@
-# PAiP Web Developer Guide
-## 0.1 Hello World
-
-Hello! If you are reading this there is some possible causes why.
-
-1. You want to contribute to work of PAiP Web. If that's the case then you really awesome and thank you. Stay motivated!
-2. You want to become PAiP Web Developer. If that's the case then welcome on the board.
-3. You want made Pull Request or Merge Request and you were referred to this document. If that's the case then propably the best way to find this what you are looking for is by direct link provided.
-4. You just want to see PAiP Web Code Style Guide and maybe even make your own based from this. If that's the case feel free to look around and fork this repo.
-## 0.2 Information About Guide
-
-This guide is made by [Patryk Adamczyk](mailto:patrykadamczyk@patrykadamczyk.net).
-
-This is PAiP Web Developer Guide version 1.
-
-If you find something which doesn't make sense, it's in too complicated language even for programmer or anything just make Issue on GitHub.
-## 1.0 Introduction
-
-### So what is this guide for ?
-It's for people to read how we working in PAiP Web and what rules we are trying restrict ourselves too for making better code.
-
-### Why i created this guide ?
-It's for making my CR easier process and making place rules for making better code which i find along my path of Developer.
-
-### What this guide will cover ?
-Firstly we will take a look at some Git Workflow and Git itself to make everything easy.
-Afterwards we are going to take a look how to make good Pull Request and Merge Request (Same thing but diffrently named. Merge Requests are used as name in GitLab and Pull Requests are used as name in GitHub).
-After that in section 4 we will take a look at how to write good documentation elements.
-In section 5 we will take a look on how to write tests and think about testing.
-In section 6 we look at Code Style things that are Language Agnostic pretty much. About patterns that are really good to know about.
-Section 7 will be all about Python and it's Code Style Guide.
-Section 8 will be about JavaScript Code Style with looking to TypeScript, Flow (Static type checker) and React.
-In Section 9 We will be looking at PHP Code Style Guide.
-Afterwards in section 10 we will sum things up.
-And in special section FF i will leave my inspirations for this guidelines.
-
-**Have a good lecture**
-## 1.Z Dictionary
-**This is special section for dictionary with definitions of more complicated elements or just short versions of some names.**
-
-### Git Workflow
-* `PR` - Pull Requests (this name will be used in place of Pull Request or Merge Requests for consistency)
 ## 2.0 Git Workflow
 
 So someone one time long ago though about Git as good tool and found good solution for naming branches and complete workflow. It's called GitFlow. People liked that and made own ways of this workflow to fit them better. That's start of our workflow.
@@ -129,10 +87,3 @@ Hotfixes are handled this way:
 2. Fix what you need to fix
 3. Change changelog, Make PR
 4. Merge it, Release new version of Project, add tag on repository
-## FF - Inspirations
-
-### 2.0 Git Workflow
-#### GitFlow
-https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-https://datasift.github.io/gitflow/IntroducingGitFlow.html
-https://danielkummer.github.io/git-flow-cheatsheet/
