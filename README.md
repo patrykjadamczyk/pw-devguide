@@ -1,2 +1,1 @@
-# pw-devguide
-PAiP Web Developer Guide
+# PAiP Web Developer Guide
