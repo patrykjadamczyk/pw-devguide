@@ -1,4 +1,3 @@
-# PAiP Web Developer Guide
 ## 0.1 Hello World
 
 Hello! If you are reading this there is some possible causes why.
