@@ -170,6 +170,17 @@ On GitLab if you want you can add how much time you spent on this task (with all
 Ok, so you made your PR. For sure if project have CHANGELOG and things in that kind of thing make sure you added what you have done to it.
 Next what you need to do is wait or just ask for Code Review of PR. In PAiP Web for that part are PAiP Web Admins which have to approve PRs.
 After Code Review if there was need for fixes then fix elements specified and move back to waiting or asking for next Code Review. If your code went through Code Review fine then it will be merged.
+## 4.0 Documentation
+There are multiple types of documentation. 
+First which we will cover is Code Documentation which is mainly in close proximity with the code. 
+Second is In Code Documentation. This is how to use comments to document your code. 
+Third is Code. Yes, Code can be documentation by itself sometimes. But if you want it to be as useful as other ones you really need to think in very specific way. 
+## 5.0 Testing
+There are two main ways of testing. 
+First one is manual testing. Manual shallow testing you propably doing all the time to check is something working. 
+We might sometimes test manually all application to see is there something more to work on or fix. Second way of testing is automated testing. 
+Automated testing uses some kind of tool to check is your app working exactly how you wanted. 
+There is way of making tests called TDD (Test Driven Development) which makes your workflow to start from making your goal of the task clear and writing test for it at beggining to keep failing until you implement everything what you needed to.
 ## FF - Inspirations
 
 ### 2.0 Git Workflow
