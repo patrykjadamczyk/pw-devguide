@@ -188,6 +188,8 @@ This section will be propably the most messy without good order. But this doesn'
 Some of Design Patterns will have examples in different languages to show you how we would do that.
 ## 7.0 - Python Style Guide
 This section have code style guide rules for Python in PAiP Web.
+## 8.0 - JavaScript Style Guide
+This section have code style guide rules for JavaScript in PAiP Web.
 ## FF - Inspirations
 
 ### 2.0 Git Workflow
