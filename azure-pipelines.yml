@@ -13,9 +13,14 @@ steps:
       scriptPath: 'build.py'
     displayName: 'Build README.md'
 
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+  - task: UseRubyVersion@0
+    inputs:
+      versionSpec: '>= 2.4'
+  
   - script: |
-      echo Add other tasks to build, test, and deploy your project.
-      echo See https://aka.ms/yaml
-    displayName: 'Run a multi-line script'
+      gem install mdl
+    displayName: 'Install Markdown Linter'
+  
+  - script: |
+      mdl README.md
+    displayName: 'Lint Generated README'
