@@ -186,6 +186,20 @@ This section is with some design patterns and how to interpret them in a way we 
 This means this section will not be collection of only facts but opinionated way of using design patterns.
 This section will be propably the most messy without good order. But this doesn't mean it will not be valueable to anyone reading this guide.
 Some of Design Patterns will have examples in different languages to show you how we would do that.
+### 6.1 - CQS & CQRS
+CQS - Command Query Separation - this is way of writing code. 
+In this way you separating writes (side effects) from reads. 
+Query in this model can take data from somewhere for example database or some kind of object. 
+And give you back data. Query can only read, can't write, can't make side effects of use. 
+Command on the other hand can only do some stuff having side effects and write somewhere.
+Can't return anything.
+
+CQRS - Command Query Responsibility Segregation - This is model based CQS.
+In this model role of Command change in some way. Because Command is clean data.
+Logic behind Command is hidden behind Command Handler.
+This is function which is associated with exactly one type of Command. 
+
+Below are some examples of implementation. 
 ## 7.0 - Python Style Guide
 This section have code style guide rules for Python in PAiP Web.
 ## 8.0 - JavaScript Style Guide
