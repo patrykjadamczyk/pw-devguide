@@ -1,0 +1,27 @@
+# PAiP Web Developer Guide Pipeline
+
+trigger:
+- master
+- version/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: PythonScript@0
+    inputs:
+      scriptSource: 'filePath'
+      scriptPath: 'build.py'
+    displayName: 'Build README.md'
+
+  - task: UseRubyVersion@0
+    inputs:
+      versionSpec: '>= 2.4'
+  
+  - script: |
+      gem install mdl
+    displayName: 'Install Markdown Linter'
+  
+  - script: |
+      mdl README.md
+    displayName: 'Lint Generated README'
