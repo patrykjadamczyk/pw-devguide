@@ -19,6 +19,12 @@ steps:
       scriptSource: 'filePath'
       scriptPath: 'build.py'
     displayName: 'Build README.md'
+  
+  - script: |
+      git add README.md
+      git commit -m "[CI] Builded README [skip ci]"
+      git push
+    displayName: 'Commiting Builded README.md'
 
   - task: UseRubyVersion@0
     inputs:
