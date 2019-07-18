@@ -7,13 +7,14 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - script: |
-      python3 build.py
+  - task: PythonScript@0
+    inputs:
+      scriptSource: 'filePath'
+      scriptPath: 'build.py'
     displayName: 'Build README.md'
 
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
-
   - script: |
       echo Add other tasks to build, test, and deploy your project.
       echo See https://aka.ms/yaml
