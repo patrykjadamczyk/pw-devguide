@@ -181,6 +181,11 @@ First one is manual testing. Manual shallow testing you propably doing all the t
 We might sometimes test manually all application to see is there something more to work on or fix. Second way of testing is automated testing. 
 Automated testing uses some kind of tool to check is your app working exactly how you wanted. 
 There is way of making tests called TDD (Test Driven Development) which makes your workflow to start from making your goal of the task clear and writing test for it at beggining to keep failing until you implement everything what you needed to.
+## 6.0 - Code Style - Language Independent
+This section is with some design patterns and how to interpret them in a way we use alike things in out work.
+This means this section will not be collection of only facts but opinionated way of using design patterns.
+This section will be propably the most messy without good order. But this doesn't mean it will not be valueable to anyone reading this guide.
+Some of Design Patterns will have examples in different languages to show you how we would do that.
 ## FF - Inspirations
 
 ### 2.0 Git Workflow
