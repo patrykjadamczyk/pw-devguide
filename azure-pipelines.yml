@@ -30,4 +30,7 @@ steps:
   
   - script: |
       mdl README.md
+    # This task is optional for now
+    continueOnError: true
+    failOnStderr: false 
     displayName: 'Lint Generated README'
