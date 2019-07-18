@@ -190,6 +190,8 @@ Some of Design Patterns will have examples in different languages to show you ho
 This section have code style guide rules for Python in PAiP Web.
 ## 8.0 - JavaScript Style Guide
 This section have code style guide rules for JavaScript in PAiP Web.
+## 9.0 - PHP Style Guide
+This section have code style guide rules for PHP in PAiP Web.
 ## FF - Inspirations
 
 ### 2.0 Git Workflow
