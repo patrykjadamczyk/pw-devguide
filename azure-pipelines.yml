@@ -2,10 +2,16 @@
 
 trigger:
 - master
+- develop
 - version/*
 
 pool:
   vmImage: 'ubuntu-latest'
+
+pr: 
+- master
+- develop
+- version/*
 
 steps:
   - task: PythonScript@0
