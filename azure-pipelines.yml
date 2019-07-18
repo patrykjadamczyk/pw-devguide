@@ -8,14 +8,14 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-pr: 
-- master
-- develop
-- version/*
-
 steps:
   - checkout: self
     persistCredentials: true
+
+  - script: |
+      git config --global user.email "paipweb@paipweb.com"
+      git config --global user.name "PAiP Web Azure Pipeline"
+    displayName: 'Set CI Git Credentials'
 
   - task: PythonScript@0
     inputs:
