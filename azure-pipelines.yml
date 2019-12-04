@@ -1,0 +1,48 @@
+# PAiP Web Developer Guide Pipeline
+
+trigger:
+- master
+- develop
+- version/*
+
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+    persistCredentials: true
+    clean: all
+
+  - script: |
+      git config --global user.email "paipweb@paipweb.com"
+      git config --global user.name "PAiP Web Azure Pipeline"
+    displayName: 'Set CI Git Credentials'
+
+  - task: PythonScript@0
+    inputs:
+      scriptSource: 'filePath'
+      scriptPath: 'build.py'
+    displayName: 'Build README.md'
+  
+  - script: |
+      git add README.md
+      git commit -m "[CI] Builded README - Build: $(Build.BuildNumber) [skip ci]"
+      git push origin HEAD:$(Build.SourceBranch)
+    displayName: 'Commiting Builded README.md'
+
+  - task: UseRubyVersion@0
+    inputs:
+      versionSpec: '>= 2.4'
+  
+  - script: |
+      gem install mdl
+    displayName: 'Install Markdown Linter'
+  
+  - script: |
+      mdl README.md
+    # This task is optional for now
+    continueOnError: true
+    failOnStderr: false 
+    displayName: 'Lint Generated README'
